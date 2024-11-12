@@ -1,0 +1,423 @@
+@charset "utf-8";
+@import "reset.css";
+
+.headerbox {
+    position: absolute;
+    left: 50%; top: 10%;
+    transform: translate(-50%, -10%);
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    width: 100%; height: 180px;
+    background-color: black;
+    left: 0;
+    top: 0;
+}
+.header_button {
+    display: none;
+}
+.header_button_close {
+    display: none;
+}
+nav {
+    display: none;
+    width: 100%;
+    background-color: black;
+    display: block;
+    height: auto;
+    padding-top: 0;
+    margin-top: 110px;
+    border-top: 2px solid #D8082C;
+}
+.blind {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+    display: block;
+    padding-bottom: 80%;
+    text-indent: -9999px;
+    background: url('../img/h1_logo.png') no-repeat center/contain;
+}
+.header_list {
+    border-top: none;
+    width: 89.453%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: left;
+    margin: auto;  
+}
+.header_list li {
+    height: 70px;
+    border-bottom: none;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.header_list li a {
+    line-height: 68px;
+    padding-left: 0;
+    color: white;
+}
+
+h2 {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mains {
+    position: relative;
+    z-index: 10;
+    padding-top: 220px;
+    line-height: 40px;
+    color: white;
+}
+.main {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 70px;
+    font-weight: normal;
+    animation: none;
+}
+
+.blind {
+    display: none;
+    width: 100%; height: 431px;
+    background-color: black;
+}
+
+
+.visual {
+    margin-top: 180px;
+}
+
+.slider {
+    width: 100%; height: 640px;
+    text-align: center;
+}
+.slider1 {
+    position: relative;
+    width: 100%; height: 640px;
+    background: url('../img/coffee2.jpg') no-repeat center/cover;
+}
+.slider1:after {
+    content: "";
+    width: 100%; height: 640px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; top: 0;
+}
+
+.about_pascucci {
+    padding-top: 250px;
+}
+.buttontextred {
+    display: inline-block;
+    width: 180px; height: 50px;
+    background-color: #D8082C;
+    border-radius: 25px;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.buttontext {
+    display: inline-block;
+    width: 180px; height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid #707070;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #707070;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.buttontext:hover {
+    background:#D8082C radial-gradient(circle, transparent 1%, #D8082C 1%) center/15000%;
+    border: 1px solid #D8082C;
+    color: #ffffff;
+}
+.buttontext:active{
+    background-color:#292d3e;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.about_info {
+    height: auto;
+    text-align: center;
+}
+.coffee {
+    float: left;
+    margin: 40px auto 0;
+    width: 811px; height: 611px;
+    background-image: url('../img/about1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.about_text {
+    width: 87.5%;
+    margin: auto;
+}
+.only {
+    margin-top: 215px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 38px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+}
+.detail {
+    margin: 40px auto 0;
+    line-height: 40px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+}
+
+.coffee2 {
+    margin: 200px 0 auto;
+    width: 970px; height: 600px;
+    background: url('../img/about2.png') no-repeat center/cover;
+    text-align: center;
+}
+
+/* .menu {
+    padding-top: 140px;
+}
+.offer {
+    width: 100%; height: auto;
+    background-color: #E9E9E9;
+    text-align: center;
+    padding-bottom: 140px;
+    padding-top: 110px;
+}
+.choicetitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.choiceko {
+    padding: 40px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+.choice {
+    display: block;
+    margin: 40px auto 0;
+    width: 328px; height: 435px;
+    background-color: white;
+    text-decoration: none;
+}
+.imgbox {
+    padding-bottom: 30px;
+    width: 260px; height: 283px;
+    margin: 30px auto 0;
+}
+h3{
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+}
+.choice_p{
+    margin-top: 20px;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+}
+.another_text {
+    background-color: black;
+    padding-top: 120px;
+    text-align: center;
+}
+.espresso {
+    padding-bottom: 80px;
+    width: 87.5%;
+    margin: auto;
+    color: white;
+}
+.about {
+    padding-bottom: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.image {
+    width: 100%; height: 326px;
+    background: url('../img/espressobar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+strong {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: white;
+}
+.barfont {
+    line-height: 30px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.event {
+    padding-top: 140px;
+}
+.june {
+    width: 87.5%;
+    margin: 0 auto;
+}
+.list1 {
+    border: 1px solid;
+    border-color: #CECECE;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 45.597%;
+    height: 0;
+    background: url('../img/list1.png') no-repeat center/cover;
+}
+.list2 {
+    border: 1px solid;
+    border-color: #CECECE;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    padding-bottom: 45.597%;
+    height: 0px;
+    background: url('../img/list2.png') no-repeat center/cover;
+}
+.event_box {
+    text-align: center;
+}
+.junetext {
+    text-align: center;
+}
+.junetitle {
+    padding: 20px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+.juneko {
+    padding-bottom: 20px;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+.date {
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+} */
+
+
+footer {
+    width: 100%;
+    background-color: #545454;
+    text-align: left;
+    padding-bottom: 280px;
+}
+
+footer a {
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+footer .text a:after {
+    content: "|";
+    margin: 0 5px 0 10px;
+}
+footer .text a:nth-child(7):after {
+    content: "";
+}
+
+footer p span::after {
+    content: "";
+    display: block;
+}
+footer p span:nth-child(2):after {
+    content: "";
+    display: none;
+}
+footer p span:nth-child(4):after {
+    content: "";
+    display: none;
+}
+
+.foot_logo {
+    float: left;
+    padding: 30px;
+    padding-left: 141px;
+    padding-top: 74px;
+    padding-bottom: 122px;
+}
+.foot {
+    float: right;
+    padding-top: 109px;   
+    padding-bottom: 109px;
+    padding-right: 136px;   
+    text-align: center;     
+}
+.foot_text {
+    float: left;
+    display: block;
+}
+.text {
+    width: 944px; height: 21px;
+    padding-top: 66px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    margin: auto;
+}
+
+.private {
+    text-decoration: none;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-size: 16px;
+    color: #D8082C;
+    font-weight: bolder;
+}
+
+.foot_p {
+    width: 944px;
+    line-height: 25px;
+    font-size: 16px;
+    margin: 20px auto;
+    font-family: 'Spoqa Han Sans Neo', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
